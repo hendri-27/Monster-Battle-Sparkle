@@ -13,6 +13,7 @@ Pemain dapat meningkatkan level monsternya dengan melawan monster lainnya yang a
 <h4>Cara battle</h4>
 Pemain yang ingin melawan monster lain hanya tinggal pergi ke daerah rerumputan. Ketika pemain bertemu seorang musuh atau sebuah monster yang menyerang pemain, maka pemain akan dihadapkan dengan 4 tombol yaitu Fight, Bag, Run, dan Monster dimana setiap tombolnya memiliki fungsi masing-masing. Tombol Fight berfungsi untuk menngeluarkan sebuah skill / serangan ke musuhnya dengan berbagai macam jenis skill dan damage skill akan bertambah sesuai level monster pemain. Tombol Bag berfungsi untuk melihat dan/atau menggunakan potion untuk memulihkan HP monster pemain. Tombol Run berfungsi untuk kabur dari perlawanan dengan monster lain. Tombol Monster berfungsi untuk melihat kondisi monster pemain.
 
+Preview:
 <img src='https://i.imgur.com/eqG3RYC.png'>
 <img src='https://i.imgur.com/hNN78o8.png'>
 <img src='https://i.imgur.com/m6gN9x1.png'>
