@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA3D532E-827A-4F6F-AF45-FD3D90469A97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Monster_Battle_Sparkle</RootNamespace>
+    <AssemblyName>Monster Battle Sparkle</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Hendri\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C0F2C699A1A31940E21234AB46435123C1C461A9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Monster Battle Sparkle_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBattleScene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBattleScene.Designer.cs">
+      <DependentUpon>FormBattleScene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCityMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCityMap.Designer.cs">
+      <DependentUpon>FormCityMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForestMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForestMap.Designer.cs">
+      <DependentUpon>FormForestMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHomeMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHomeMap.Designer.cs">
+      <DependentUpon>FormHomeMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonsterCenterMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonsterCenterMap.Designer.cs">
+      <DependentUpon>FormMonsterCenterMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\SettingsVolume.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsVolume.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="UserControlBag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBag.Designer.cs">
+      <DependentUpon>UserControlBag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlNewGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlNewGame.Designer.cs">
+      <DependentUpon>UserControlNewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMonster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMonster.Designer.cs">
+      <DependentUpon>UserControlMonster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlQuest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlQuest.Designer.cs">
+      <DependentUpon>UserControlQuest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBattleScene.resx">
+      <DependentUpon>FormBattleScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCityMap.resx">
+      <DependentUpon>FormCityMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForestMap.resx">
+      <DependentUpon>FormForestMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHomeMap.resx">
+      <DependentUpon>FormHomeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonsterCenterMap.resx">
+      <DependentUpon>FormMonsterCenterMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBag.resx">
+      <DependentUpon>UserControlBag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlNewGame.resx">
+      <DependentUpon>UserControlNewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMonster.resx">
+      <DependentUpon>UserControlMonster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlQuest.resx">
+      <DependentUpon>UserControlQuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Monster Battle Sparkle_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\SettingsVolume.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsVolume.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\battle scene.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encounterSelectWindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encounterSelectWindowExpBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poke Center Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forest Map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bidoof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachu Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openPokeball.png" />
+    <None Include="Resources\pokeball.png" />
+    <None Include="Resources\encounterWindow.png" />
+    <None Include="Resources\glowPokeball.gif" />
+    <None Include="Resources\pokeballDark.png" />
+    <None Include="Resources\sparkleTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundPokemon.jpg" />
+    <None Include="Resources\BackgroundBag.jpg" />
+    <None Include="Resources\bagIcon.png" />
+    <None Include="Resources\BackgroundNewGame.jpg" />
+    <None Include="Resources\background.jpg" />
+    <Content Include="Resources\BattlePokemon.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Bidoof.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\City.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\expPotion.png" />
+    <None Include="Resources\FontBag.png" />
+    <None Include="Resources\down-1.png" />
+    <None Include="Resources\down-2.png" />
+    <None Include="Resources\down-3.png" />
+    <Content Include="Resources\Forest.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\GetItem.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hit.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Home.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\itemInfo.png" />
+    <None Include="Resources\left-1.png" />
+    <None Include="Resources\left-2.png" />
+    <None Include="Resources\left-3.png" />
+    <Content Include="Resources\LevelUp.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\NPCMomIdleRight.png" />
+    <None Include="Resources\npcMomIdleDown.png" />
+    <Content Include="Resources\NewGame.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Pikachu.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pikachuMove.gif" />
+    <None Include="Resources\pocketInfo.png" />
+    <Content Include="Resources\PokemonCenter.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\questBackground.jpg" />
+    <None Include="Resources\questIcon.png" />
+    <None Include="Resources\Professor.png" />
+    <Content Include="Resources\Recovery.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\starly.png" />
+    <None Include="Resources\slotItem.png" />
+    <None Include="Resources\right-1.png" />
+    <None Include="Resources\right-2.png" />
+    <None Include="Resources\right-3.png" />
+    <Content Include="Resources\Starly.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\title.png" />
+    <Content Include="Resources\TitleScreen.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\up-1.png" />
+    <None Include="Resources\up-2.png" />
+    <None Include="Resources\up-3.png" />
+    <Content Include="Resources\Victory.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
